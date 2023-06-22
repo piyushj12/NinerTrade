@@ -1,0 +1,106 @@
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+  padding-top: 50px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 75px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+  font-size: 18px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  transition: 0.2s all ease;
+  opacity: 1;
+  color: rgb(17, 17, 17);
+  background-color: transparent;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.container .categories-select {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.title-input,
+.author-input,
+.description-textarea {
+  margin-top: 20px;
+}
+
+.sampleImages-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sampleImages-container .sampleImage1-container,
+.sampleImages-container .sampleImage2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sampleImage1-container #sampleImage1,
+.sampleImage2-container #sampleImage2 {
+  max-width: 180px;
+  max-height: 270px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.image-upload {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.image-upload input {
+  overflow: hidden;
+  width: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/newTrade.css" />
+    <link rel="stylesheet" href="/css/trade.css" />
+    <link rel="stylesheet" href="/css/trades.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/javascript/newTrade.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">
+        <img src="/images/Thrift.jpeg" alt="logo" class="logo-img" />
+      </a>
+      <div class="nav">
+        <a href="/trades/new" class="start-trade">Start Trading</a>
+        <a href="/trades" class="view-trade">Browse</a>
+        <% if(!user){%>
+        <a href="/users/login" class="login">Login</a>
+        <span>|</span>
+        <a href="/users/new" class="signup">Sign Up</a>
+        <%}else{%>
+        <a href="/users/profile" class="profile">Profile</a><span>|</span>
+        <a href="/users/logout" class="logout">Logout</a>
+        <%}%>
+      </div>
+    </header>
+    <% if(errorMessages.length > 0) {%> <% errorMessages.forEach(message=>{%>
+    <div class="error"><%=message%></div>
+    <%});%> <%}%> <% if(successMessages.length > 0) {%> <%
+    successMessages.forEach(message=>{%>
+    <div class="success"><%=message%></div>
+    <%});%> <%}%>
+  </body>
+</html>

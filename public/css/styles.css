@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #171a21;
+}
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 100%;
+  padding-top: 7px;
+  z-index: 10;
+}
+header .logo-img {
+  height: auto;
+  width: 100px;
+  padding-top: 10px;
+}
+
+header .nav {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vh;
+}
+
+header .nav a {
+  text-decoration: none;
+}
+
+header .nav .start-trade {
+  border: 1px solid #5c7e10;
+  background-color: #5c7e10;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 9px;
+  font-size: 18px;
+}
+
+header .nav .start-trade:hover {
+  color: #5c7e10;
+  background-color: transparent;
+}
+
+header .nav span {
+  color: rgb(184, 182, 180);
+}
+
+header .nav .login,
+header .nav .signup,
+header .nav .view-trade,
+header .nav .profile,
+header .nav .logout {
+  color: rgb(184, 182, 180);
+  font-size: 18px;
+}
+
+header .nav .login:hover,
+header .nav .signup:hover,
+header .nav .view-trade:hover,
+header .nav .profile:hover,
+header .nav .logout:hover {
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-height: 75px;
+  width: 100%;
+}
+
+footer .nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vh;
+  color: rgb(184, 182, 180);
+}
+
+footer .nav a {
+  text-decoration: none;
+  color: rgb(184, 182, 180);
+  text-transform: uppercase;
+}
+footer .nav a:hover {
+  color: #fff;
+}
+
+footer .socials {
+  width: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .socials svg {
+  width: 30px;
+  height: 30px;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: auto;
+}

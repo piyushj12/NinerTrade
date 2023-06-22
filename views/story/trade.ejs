@@ -1,0 +1,64 @@
+<%- include('../partials/header.ejs') %>
+<div class="main-container">
+  <div class="view-more-container">
+    <a href="/trades" class="view-more">
+      <i class="fa fa-chevron-left"></i> View More</a
+    >
+  </div>
+  <div class="product-container">
+    <div class="product-material-container">
+      <h2 class="material-title">MATERIALS, CARE AND ORIGIN</h2>
+      <div class="material-description">
+        <p><%=story.materialDescription%></p>
+      </div>
+      <% if(user == story.author._id){%>
+      <div class="material-action-button">
+        <form>
+          <button
+            type="submit"
+            formmethod="POST"
+            formaction="/trades/<%= story.id %>?_method=DELETE"
+            class="delete-button"
+          >
+            Delete
+          </button>
+          <button
+            type="submit"
+            formmethod="GET"
+            formaction="/trades/<%= story.id %>/edit"
+            class="edit-button"
+          >
+            Edit
+          </button>
+        </form>
+      </div>
+      <%}%>
+    </div>
+    <img
+      src="http://localhost:3000/images/<%= story.image1 %>"
+      alt="image1"
+      class="image-1"
+    />
+    <img
+      src="http://localhost:3000/images/<%= story.image2 %>"
+      alt="image2"
+      class="image-2"
+    />
+    <div class="product-info-container">
+      <div class="product-header">
+        <h2 class="product-title"><%=story.title%></h2>
+        <div class="product-action-buttons">
+          <a href="#" class="wishlist-button"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+      <div class="product-description">
+        <p><%=story.productDescription%></p>
+      </div>
+      <div class="product-action-buttons">
+        <a href="#" class="trade-button">Offer A Trade</a>
+        <a href="#" class="rate-button">Rate Item</a>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../partials/footer.ejs') %>

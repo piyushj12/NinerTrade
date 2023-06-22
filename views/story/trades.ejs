@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs') -%>
+<div class="main-content">
+  <div class="category-list">
+    <div>
+      <% Object.keys(TMapping).forEach(function(category) { %>
+      <h1><%= category %></h1>
+      <% TMapping[category].forEach(function(item) { %>
+      <a href="trades/<%= item.id %>"> <%= item.tradeitemsubcategory %></a> <%
+      }) %> <% }) %>
+    </div>
+  </div>
+  <div class="category-images">
+    <img class="image-1" src="/images/suit.jpg" alt="image-1" />
+    <img class="image-1" src="/images/jeans.jpg" alt="image-1" />
+    <img class="image-1" src="/images/sneaker.jpg" alt="image-1" />
+    <img class="image-1" src="/images/tracksuit.jpg" alt="image-1" />
+    <img class="image-1" src="/images/shirt.jpg" alt="image-1" />
+    <img class="image-1" src="/images/jacket.jpg" alt="image-1" />
+  </div>
+</div>
+<%- include('../partials/footer.ejs') -%>

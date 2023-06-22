@@ -1,0 +1,86 @@
+<%- include('../partials/header.ejs') -%>
+<form
+  action="/trades"
+  method="POST"
+  class="newTradeForm"
+  enctype="multipart/form-data"
+>
+  <div class="container">
+    <h1>Create A New Trade</h1>
+    <p>Please fill the details of a new trade.</p>
+    <hr />
+    <br />
+    <label>Category</label>
+    <input type="text" name="tradeitemcategory" class="categories-select" />
+    <hr />
+    <br />
+    <label>Sub Category</label>
+    <input type="text" name="tradeitemsubcategory" class="categories-select" />
+    <hr />
+    <br />
+    <label>Title</label>
+    <input type="text" name="title" class="title-input" />
+    <hr />
+    <br />
+    <label>Size</label>
+    <input type="text" name="size" class="title-input" />
+    <hr />
+    <br />
+    <label>Material Description</label>
+    <textarea
+      rows="10"
+      cols="107"
+      name="materialDescription"
+      class="description-textarea"
+      placeholder="Add material description here."
+    ></textarea>
+    <hr />
+    <br />
+    <label>Product Description</label>
+    <textarea
+      rows="10"
+      cols="107"
+      name="productDescription"
+      class="description-textarea"
+      placeholder="Add product description here."
+    ></textarea>
+    <hr />
+    <br />
+    <div class="sampleImages-container">
+      <div class="sampleImage1-container">
+        <label class="image-upload">
+          Choose Image<input
+            type="file"
+            accept="image/*"
+            name="sampleImage1"
+            onchange="readImage1(this);"
+        /></label>
+
+        <img
+          id="sampleImage1"
+          src="https://via.placeholder.com/180x270"
+          alt="sampleImage1"
+        />
+      </div>
+      <div class="sampleImage2-container">
+        <label class="image-upload">
+          Choose Image<input
+            type="file"
+            accept="image/*"
+            name="sampleImage2"
+            onchange="readImage2(this);"
+        /></label>
+
+        <img
+          id="sampleImage2"
+          src="https://via.placeholder.com/180x270"
+          alt="sampleImage2"
+        />
+      </div>
+    </div>
+    <hr />
+    <br />
+    <button type="submit" class="registerbtn">Add New Trade</button>
+  </div>
+</form>
+<%- include('../partials/footer.ejs') -%>

@@ -1,0 +1,150 @@
+.product-container {
+  margin: 50px auto;
+  max-width: 1440px;
+  display: flex;
+  font-family: Roboto, sans-serif;
+}
+
+.product-container .image-1 {
+  width: 304px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 2px solid rgb(100, 100, 100);
+}
+
+.product-container .image-2 {
+  border: 2px solid rgb(100, 100, 100);
+  padding: 10px;
+  width: 299px;
+}
+
+.product-info-container {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.product-material-container {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-material-container .material-title {
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.product-info-container .product-title {
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.product-info-container .product-description {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(17, 17, 17);
+  max-width: 370px;
+  line-break: auto;
+}
+
+.product-material-container .material-description {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 25.6px;
+  color: rgb(53, 53, 53);
+  font-weight: 100;
+  max-width: 370px;
+  line-break: auto;
+}
+
+.product-info-container .product-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-info-container .product-action-buttons .rate-button {
+  margin-right: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+  padding: 10px 10px;
+}
+.product-info-container .product-action-buttons .wishlist-button {
+  padding: 10px 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  font-size: 28px;
+}
+.product-info-container .product-action-buttons .rate-button:hover {
+  transition: 0.4s all ease;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+}
+.product-info-container .product-action-buttons .wishlist-button:hover {
+  transition: 0.4s all ease;
+  color: red;
+}
+.product-info-container .product-action-buttons .trade-button {
+  margin-right: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+  padding: 10px 10px;
+}
+
+.product-info-container .product-action-buttons .trade-button:hover {
+  transition: 0.4s all ease;
+  background-color: transparent;
+  color: rgb(17, 17, 17);
+}
+.view-more-container {
+  margin-top: 50px;
+}
+.view-more-container .view-more {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  font-size: 22px;
+}
+
+.product-header {
+  display: flex;
+}
+.material-action-button form {
+  display: flex;
+}
+.material-action-button .delete-button,
+.material-action-button .edit-button {
+  margin-right: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+  background-color: #fff;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.material-action-button .delete-button:hover,
+.material-action-button .edit-button:hover {
+  transition: 0.4s all ease;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+}

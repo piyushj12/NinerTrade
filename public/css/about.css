@@ -1,0 +1,17 @@
+.about-header {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  margin: 20px auto 75px auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 300%;
+  max-width: 1200px;
+}
+
+.main-content h3 {
+  font-size: 25px;
+  font-weight: lighter;
+}
