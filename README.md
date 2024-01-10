@@ -20,7 +20,7 @@ NinerTrade is an innovative web application designed for online clothing trading
 ## Installation
 To run this project locally, follow these steps:
 
-1. Clone the repository: git clone [https://github.com/piyushj12/Tic-Toc-Toe.git]
+1. Clone the repository: git clone [https://github.com/piyushj12/NinerTrade.git]
 2. Navigate to the project directory: cd tic-tac-toe
 3. Install dependencies: npm install
 4. Run the application: node app
