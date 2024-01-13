@@ -11,11 +11,11 @@ const MongoStore = require("connect-mongo");
 //app creating
 const app = express();
 
-let port = 3000;
-let host = "localhost";
+let port = process.env.PORT || 3000;
+let host = process.env.HOST || "localhost";
 app.set("view engine", "ejs");
 mongoose
-  .connect("mongodb://localhost:27017/trades", {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/trades", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
@@ -33,7 +33,9 @@ app.use(
     secret: "ajfeirf90aeu9eroejfoefj",
     resave: false,
     saveUninitialized: false,
-    store: new MongoStore({ mongoUrl: "mongodb://localhost:27017/trades" }),
+    store: new MongoStore({
+      mongoUrl: process.env.MONGODB_URI || "mongodb://localhost:27017/trades",
+    }),
     cookie: { maxAge: 60 * 60 * 1000 },
   })
 );
